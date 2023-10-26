@@ -1,0 +1,8 @@
+ 2008  vim shakespeare.txt 
+ 2009  tr -sc 'A-Za-z' '\n'<shakespeare.txt
+ 2011  tr -sc 'A-Za-z' '\n'<shakespeare.txt>tokens.txt
+ 2015  tr -sc 'A-Za-z' '\n'<shakespeare.txt|sort|uniq -c >tokensfreq.txt
+ 2018  tr -sc 'A-Za-z' '\n' <shakespeare.txt |tr A-Z a-z | sort | uniq -C | sort -n -r >sorttokensbyfreq.txt
+ 2019  ls
+ 2020  tr -sc 'A-Za-z' '\n' <shakespeare.txt |tr A-Z a-z | sort | uniq -c | sort -n -r >sorttokensbyfreq.txt
+ 2021  gedit sorttokensbyfreq.txt 
